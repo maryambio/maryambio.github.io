@@ -38,8 +38,8 @@ nav ul li a:hover {
 
 .profile-pic {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;  /* Reduced size */
+    height: 100px; /* Reduced size */
     margin-right: 20px;
 }
 
