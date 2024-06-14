@@ -37,9 +37,9 @@ nav ul li a:hover {
 }
 
 .profile-pic {
-    border-radius: 50%;
-    width: 100px;  /* Reduced size */
-    height: 100px; /* Reduced size */
+    border-radius: 300%;
+    width: 300px;  /* Reduced size */
+    height: 300px; /* Reduced size */
     margin-right: 20px;
 }
 
