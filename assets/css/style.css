@@ -10,7 +10,7 @@ nav ul {
     padding: 0;
     margin: 0;
     background-color: #333;
-    border-top: 4px solid #000; /* Adding a top border */
+    border-top: 4px solid #000;
 }
 
 nav ul li {
@@ -19,7 +19,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding: 14px 20px; /* Adding padding for better spacing */
+    padding: 14px 20px;
     color: white;
     display: inline-block;
 }
@@ -28,7 +28,43 @@ nav ul li a:hover {
     background-color: #555;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.bio {
+    flex: 1;
+}
+
+.bio h1 {
+    margin: 0 0 10px;
+}
+
+.bio p {
+    margin: 0 0 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #0073b1; /* LinkedIn blue */
+    margin-right: 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
 .content {
     padding: 20px;
 }
-
