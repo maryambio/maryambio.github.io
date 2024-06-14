@@ -38,9 +38,9 @@ nav ul li a:hover {
 
 .profile-pic {
     border-radius: 50%;
-    width: 200px;  /* Reduced size */
-    height: 200px; /* Reduced size */
-    margin-right: 50px;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
 }
 
 .bio {
