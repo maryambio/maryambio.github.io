@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+   height: 300vh; 
+    display: flex;
+    flex-direction: column;  /* This ensures body contents are laid out properly without affecting the nav bar */
+    justify-content: center;  /* Center content vertically */
+    align-items: center;      /* Center content horizontally */
+}
+
+nav {
+    width: 100%;              /* Ensure nav takes full width */
+    background-color: #333;
+    border-top: 4px solid #000;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px; /* width of top bar */
+    margin: 0;
+    display: flex;            /* Flexbox for horizontal alignment */
+    justify-content: center;  /* Center the menu items horizontally */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 14px 20px;
+    color: white;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.header {   /*this is the part that picture is on that */
+    display: flex;
+    align-items: center;       /* Align items in the center vertically */
+    justify-content: center;   /* Center the header content horizontally */
+    padding: 100px;
+    background-color: #e0f7f4;
+    border-bottom: 1px solid #ddd;
+    text-align: left;          /* Align text to the left */
+}
+
+.profile-pic {
+    border-radius: 50%;        /* Circular shape */
+    width: 300px;              /* Medium size */
+    height: 300px;             /* Medium size */
+    margin-right: 40px;        /* Space between image and bio text */
+}
+
+.bio {
+    flex: 1;
+    text-align: left;          /* Align the bio text to the left */
+}
+
+.bio h1 {
+    margin: 0 0 10px;
+}
+
+.bio p {
+    margin: 0 0 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;   /* Center the links horizontally */
+    margin-top: 20px;          /* Space between the image and social links */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #0073b1;            /* LinkedIn blue */
+    margin: 0 10px;            /* Space between the links */
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;                   /* Allow content to take remaining space */
+}
+
+.content {
+    padding: 40px; /* Increased padding for more space */
+    max-width: 800px; /* Max width for readability */
+    margin: auto; /* Center align */
+}
+
+.social-links {
+    display: flex;
+    gap: 10px; /* Adjusts space between icons */
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-links .icon {
+    width: 24px; /* Adjust the size of the icons */
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-links .icon:hover {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+
