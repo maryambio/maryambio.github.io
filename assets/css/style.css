@@ -37,10 +37,10 @@ nav ul li a:hover {
 }
 
 .profile-pic {
-   
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
+    border-radius: 80%;
+    width: 300px;  /* Medium size */
+    height: 300px; /* Medium size */
+    margin-right: 40px;
 }
 
 .bio {
