@@ -3,26 +3,28 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-   height: 300vh; 
+    height: 100vh;
     display: flex;
-    flex-direction: column;  /* This ensures body contents are laid out properly without affecting the nav bar */
-    justify-content: center;  /* Center content vertically */
-    align-items: center;      /* Center content horizontally */
+    flex-direction: column; /* This ensures body contents are laid out properly */
 }
 
+/* Nav Styles */
 nav {
-    width: 100%;              /* Ensure nav takes full width */
+    width: 100%;
     background-color: #333;
     border-top: 4px solid #000;
-    
+    position: fixed; /* Fixes the nav bar at the top of the page */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the nav stays on top of other elements */
 }
 
 nav ul {
     list-style-type: none;
-    padding: 10px; /* width of top bar */
+    padding: 10px;
     margin: 0;
-    display: flex;            /* Flexbox for horizontal alignment */
-    justify-content: center;  /* Center the menu items horizontally */
+    display: flex;
+    justify-content: center; /* Center the menu items horizontally */
 }
 
 nav ul li {
@@ -40,81 +42,67 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-.header {   /*this is the part that picture is on that */
+/* Header Section */
+
+.header {
     display: flex;
-    align-items: center;       /* Align items in the center vertically */
-    justify-content: center;   /* Center the header content horizontally */
-    padding: 100px;
+    align-items: center;       
+    justify-content: center;   
+    padding: 120px 60px 40px; /* Increased padding for more height */
     background-color: #e0f7f4;
     border-bottom: 1px solid #ddd;
-    text-align: left;          /* Align text to the left */
+    text-align: left;          
+    width: 100%; /* Full width of the page */
+    max-width: 1000px; /* Set a maximum width */
+    margin: 0 auto; /* Center the header */
 }
 
+/* Flex container for Profile and Biography */
+.profile-bio-container {
+    display: flex;            /* Flexbox layout to align items horizontally */
+    align-items: flex-start;  /* Align items at the top */
+    gap: 40px;                /* Add space between profile and bio sections */
+    max-width: 1200px;        /* Constrain width for a cleaner look */
+    margin: 0 auto;           /* Center the container */
+}
+
+/* Profile Picture Styling */
 .profile-pic {
     border-radius: 50%;        /* Circular shape */
-    width: 300px;              /* Medium size */
-    height: auto;              /* Height will adjust automatically to maintain aspect ratio */    
-    object-fit: cover;         /* Ensures the image covers the circular shape */
-    margin-right: 40px;        /* Space between image and bio text */
+    width: 200px;              /* Size of the picture */
+    height: auto;
+    object-fit: cover;         /* Ensure the image fits the circular shape */
 }
 
+/* Bio Text */
 .bio {
-    flex: 1;
-    text-align: left;          /* Align the bio text to the left */
+    max-width: 600px;          /* Limit the width of the bio for readability */
+    text-align: left;          /* Align bio text to the left */
 }
 
-.bio h1 {
-    margin: 0 0 10px;
-}
-
-.bio p {
-    margin: 0 0 20px;
-}
-
+/* Social Links */
 .social-links {
     display: flex;
-    justify-content: center;   /* Center the links horizontally */
-    margin-top: 20px;          /* Space between the image and social links */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-.social-links a {
-    text-decoration: none;
-    color: #0073b1;            /* LinkedIn blue */
-    margin: 0 10px;            /* Space between the links */
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-.content {
-    padding: 20px;
-    flex: 1;                   /* Allow content to take remaining space */
-}
-
-.content {
-    padding: 40px; /* Increased padding for more space */
-    max-width: 800px; /* Max width for readability */
-    margin: auto; /* Center align */
-}
-
-.social-links {
-    display: flex;
-    gap: 10px; /* Adjusts space between icons */
-}
-
-.social-links a {
-    display: inline-block;
-}
-
-.social-links .icon {
-    width: 24px; /* Adjust the size of the icons */
+/* Social Link Icons */
+.icon {
+    width: 24px;
     height: 24px;
     transition: transform 0.3s ease;
 }
 
-.social-links .icon:hover {
-    transform: scale(1.2); /* Zoom effect on hover */
+.icon:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
 }
 
-
+/* Content Section Styling */
+.content {
+    padding: 40px;  
+    max-width: 800px;   
+    margin: auto;    
+    margin-top: 1px; /* Reduced margin-top */
+}
