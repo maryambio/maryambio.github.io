@@ -53,7 +53,8 @@ nav ul li a:hover {
 .profile-pic {
     border-radius: 50%;        /* Circular shape */
     width: 300px;              /* Medium size */
-    height: 300px;             /* Medium size */
+    height: auto;              /* Height will adjust automatically to maintain aspect ratio */    
+    object-fit: cover;         /* Ensures the image covers the circular shape */
     margin-right: 40px;        /* Space between image and bio text */
 }
 
