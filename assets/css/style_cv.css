@@ -11,17 +11,19 @@ body {
     color: #333; /* Dark text color */
 }
 
+/* Nav Styles */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #333; /* Dark nav bar */
+    border-top: 4px solid #000; /* Add a top border */
     z-index: 1000;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px; /* Match the first CSS file */
     margin: 0;
     display: flex;
     justify-content: center; /* Center nav links */
@@ -33,7 +35,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 14px 20px; /* Consistent padding for links */
     color: white; /* White text */
     display: inline-block; /* Ensures proper padding */
     transition: background-color 0.3s; /* Smooth hover effect */
@@ -45,10 +47,10 @@ nav ul li a:hover {
 
 /* Content styles */
 .content {
-    margin-top: 100px; /* Increased space below the nav to 100px */
+    margin-top: 100px; /* Space below the nav to accommodate fixed position */
     padding: 20px;
     max-width: 800px; /* Limit width for better readability */
-    min-height: 800px; /* Limit height for better readability */
+    min-height: 800px; /* Minimum height for content */
     margin: auto; /* Center the content */
     background-color: white; /* White background for content */
     border-radius: 8px; /* Rounded corners */
@@ -56,7 +58,7 @@ nav ul li a:hover {
 }
 
 .content h1 {
-    margin-top: 60px; /* Additional space above the h1  top menue and first text space */ 
+    margin-top: 100px; /*  distance from top menu bar Space above the h1 to create distance from the nav */
     font-size: 2.5em; /* Larger title size */
     margin-bottom: 20px; /* Space below title */
 }
@@ -64,12 +66,11 @@ nav ul li a:hover {
 .content h2 {
     font-size: 1.5em; /* Section header size */
     margin-top: 20px; /* Space above headers */
-    margin-bottom: 10px; /* Space below headers to increase distance from border */
+    margin-bottom: 10px; /* Space below headers */
     border-top: 2px solid #46849c; /* Underline effect */
-    padding-top: 15px; /* Increase space above the text */
+    padding-top: 15px; /* Space above the text */
     padding-bottom: 5px; /* Padding below header */
 }
-
 
 .content p {
     margin: 10px 0; /* Space between paragraphs */
